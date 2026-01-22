@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Product – Landing Page</title>
+
+  <style>
+    :root {
+      --primary: #4f46e5;
+      --dark: #0f172a;
+      --gray: #64748b;
+      --bg: #f8fafc;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--dark);
+      line-height: 1.6;
+    }
+
+    /* Header */
+    header {
+      padding: 1.2rem 5%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #fff;
+      box-shadow: 0 2px 8px rgba(0,0,0,.05);
+    }
+
+    header h1 {
+      font-size: 1.4rem;
+      color: var(--primary);
+    }
+
+    header nav a {
+      margin-left: 1.5rem;
+      text-decoration: none;
+      color: var(--gray);
+      font-weight: 500;
+    }
+
+    /* Hero */
+    .hero {
+      padding: 5rem 5%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      align-items: center;
+    }
+
+    .hero h2 {
+      font-size: 3rem;
+      line-height: 1.2;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      color: var(--gray);
+      margin-bottom: 2rem;
+    }
+
+    .hero button {
+      padding: 0.9rem 2rem;
+      background: var(--primary);
+      border: none;
+      color: #fff;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    .hero img {
+      width: 100%;
+      border-radius: 16px;
+    }
+
+    /* Features */
+    .features {
+      padding: 4rem 5%;
+      background: #fff;
+    }
+
+    .features h3 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 2rem;
+    }
+
+    .feature {
+      padding: 2rem;
+      border-radius: 12px;
+      background: var(--bg);
+      text-align: center;
+    }
+
+    .feature h4 {
+      margin-bottom: 0.5rem;
+    }
+
+    .feature p {
+      color: var(--gray);
+      font-size: 0.95rem;
+    }
+
+    /* CTA */
+    .cta {
+      padding: 4rem 5%;
+      text-align: center;
+      background: var(--primary);
+      color: #fff;
+    }
+
+    .cta h3 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .cta button {
+      margin-top: 1.5rem;
+      padding: 0.9rem 2rem;
+      border: none;
+      border-radius: 8px;
+      background: #fff;
+      color: var(--primary);
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    /* Footer */
+    footer {
+      padding: 1.5rem;
+      text-align: center;
+      font-size: 0.9rem;
+      color: var(--gray);
+    }
+
+    @media (max-width: 900px) {
+      .hero {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>MyDevopsHomeWork</h1>
+  <nav>
+    <a href="#">Features</a>
+    <a href="#">Pricing</a>
+    <a href="#">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div>
+    <h2>Build Faster. Launch Smarter.</h2>
+    <p>
+      A simple landing page template for startups, products,
+      and SaaS businesses. Clean, fast, and responsive.
+    </p>
+    <button>Get Started</button>
+  </div>
+  <img src="https://via.placeholder.com/600x400" alt="Product preview">
+</section>
+
+<section class="features">
+  <h3>Why Choose Us</h3>
+  <div class="feature-grid">
+    <div class="feature">
+      <h4>🚀 Fast Setup</h4>
+      <p>Launch your product landing page in minutes.</p>
+    </div>
+    <div class="feature">
+      <h4>🎨 Modern Design</h4>
+      <p>Clean UI with a professional look and feel.</p>
+    </div>
+    <div class="feature">
+      <h4>📱 Responsive</h4>
+      <p>Looks great on desktop, tablet, and mobile.</p>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <h3>Ready to get started?</h3>
+  <p>Start building your next idea today.</p>
+  <button>Sign Up Now</button>
+</section>
+
+<footer>
+  © 2026 MyProduct. All rights reserved.
+</footer>
+
+</body>
+</html>

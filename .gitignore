@@ -113,3 +113,5 @@ media/
 # **/migrations/**
 # !**/migrations
 # !**/migrations/__init__.py
+# Snyk Security Extension - AI Rules (auto-generated)
+.cursor/rules/snyk_rules.mdc
